@@ -1,0 +1,14 @@
+<div ng-controller="MainCtrl">
+    <form name="githubSearch" ng-submit="Search()">
+      <input type="search" required="" placeholder="Github username" ng-model="username" />
+      <input type="submit" value="Search" />
+
+
+      {{countDown}}
+       Sort by:
+                <select ng-model="repoSort">
+        <option value="name">Name</option>
+        <option value="language">Language</option>
+      </select>
+    </form>
+  </div>

@@ -1,0 +1,14 @@
+<a href="#/main">Back to search</a>
+ <div ng-show="message">
+<img ng-src={{message}}/>
+<table>
+  <tr>
+    <th> Name </th>
+    <th> Language </th>
+  </tr>
+  <tr ng-repeat="repo in repos">
+    <td>{{repo.name}}</td>
+    <td>{{repo.language}}</td>
+  </tr>
+</table>
+</div>
